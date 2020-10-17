@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>FORMULARIO</title>
+</head>
+
+<body bgcolor="black">
+
+	<H1><font color="blue">FORMULARIO</font></H1>
+
+                              
+<form action="../../form-result.php" target="_blank">
+
+  <fieldset>
+	<font color="yellow">
+    <legend>Información personal</legend>
+
+    <p>Nombre(s):<input type="text" name="Nombre(s)" size="40" placeholder="Escriba su(s) nombre(s) completo(s)"></p>
+    <p>Apellidos:<input type="text" name="apellidos" size="40" placeholder="Escriba sus dos apellidos"></p>
+	Teléfono: <input type="tel" name="telefono" size="30" placeholder="Escriba su numero telefonico">
+
+	<p>Cual es tu estado<select name="Estado" id="">
+		<option value="Edo Mex">Edo Mex </option>
+		<option value="Baja California">Baja California </option>
+		<option value="Baja California Sur">Baja California Sur </option>
+		<option value="Sonora">Sonora </option>
+		<option value="Chihuahua">Chihuahua </option>
+		<option value="Sinaloa">Sinaloa </option>
+		<option value="Durango">Durango </option>
+		<option value="Nuevo Leon">Nuevo Leon </option>
+		<option value="Puebla">Puebla </option>
+		<option value="CDMX">CDMX </option>
+		<option value="Veracruz">Veracruz </option>
+	</select></p>
+
+    <p>Sexo:
+    <input type="radio" name="hm" value="h"> Hombre
+    <input type="radio" name="hm" value="m"> Mujer </p>
+
+    <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+    <p>Usuario: <input type="text" name="usuario" maxlength="10"></p>
+	<p>Contraseña: <input type="password" name="password" minlength="6"></p>
+
+
+  </fieldset>
+
+
+  <fieldset>
+  	<legend>Fecha y hora en que se realizo el formulario</legend>
+
+  Fecha: <input type="date" name="fecha">
+	Mes: <input type="month" name="mes">
+	Semana: <input type="week" name="semana">
+	Hora: <input type="time" name="hora">
+
+  </fieldset>
+
+
+
+
+  <fieldset>
+    <legend>Gustos</legend>
+
+    <p>
+      <label><input type="checkbox" name="arte"> El Arte</label><br>
+      <label><input type="checkbox" name="television"> La Televisión</label><br>
+      <label><input type="checkbox" name="videojuegos"> Los Videojuegos</label><br>
+      <label><input type="checkbox" name="deportes"> Los Deportes</label><br> </p>
+
+	 	
+ 		<label>Color favorito<input type="color" name="colorElegido"> </label>
+
+</form>
+ 	</fieldset>
+
+
+ 	<fieldset>
+ 		<legend>Subir archivo</legend>
+
+ 		<p><label>Subir un archivo</label>><input type="file" name="archivo"></p>
+ 		<p><label>Subir un archivo de imagen</label>><input type="file" name="archivo"></p>
+
+ 	</fieldset>
+
+  <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+  
+
+</form>
+</body>
+</html>
